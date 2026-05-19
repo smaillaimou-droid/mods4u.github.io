@@ -14,6 +14,7 @@
     --accent: #00e5a0;
     --accent2: #ff6b35;
     --blue-accent: #6366f1;
+    --yellow-accent: #eab308;
     --gold: #ffd700;
     --text: #e8eaf0;
     --muted: #8892a4;
@@ -800,6 +801,90 @@
   .info-val.highlight-blue { color: var(--blue-accent); }
   .feature-item:hover.blue-hover { border-color: var(--blue-accent); }
 
+  /* ─── SPEED STARS HEADER ─── */
+  .game4-header {
+    background: linear-gradient(180deg, #131000 0%, var(--bg) 100%);
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    padding: 28px 20px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .game4-header::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(234,179,8,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .badge-yellow {
+    display: inline-block;
+    background: linear-gradient(135deg, #2a2000, #3a2d00);
+    border: 1px solid var(--yellow-accent);
+    color: var(--yellow-accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  .badge-yellow::before { content: '✦ '; }
+
+  /* Yellow CTA */
+  .download-btn-yellow {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #ca8a04 0%, #eab308 50%, #ca8a04 100%);
+    color: #0a0700;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 18px 24px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(234,179,8,0.4), 0 0 0 1px rgba(234,179,8,0.25);
+    animation: glow-pulse-yellow 2.5s ease-in-out infinite;
+    text-align: center;
+  }
+  .download-btn-yellow::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+    animation: shimmer 2.5s ease-in-out infinite;
+  }
+  @keyframes glow-pulse-yellow {
+    0%, 100% { box-shadow: 0 4px 30px rgba(234,179,8,0.4), 0 0 0 1px rgba(234,179,8,0.25); }
+    50% { box-shadow: 0 4px 44px rgba(234,179,8,0.65), 0 0 0 2px rgba(234,179,8,0.4); }
+  }
+  .cta-wrap-yellow {
+    background: linear-gradient(135deg, var(--surface) 0%, #0f0d00 100%);
+    border: 1px solid #3a2d00;
+    border-radius: 20px;
+    padding: 28px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-wrap-yellow::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--yellow-accent), transparent);
+  }
+  .info-val.highlight-yellow { color: var(--yellow-accent); }
+
   /* ─── STICKY CTA (mobile) ─── */
   .sticky-cta {
     position: fixed;
@@ -1528,6 +1613,240 @@
   </div>
 
 </div><!-- /container retro bowl -->
+
+<!-- ═══════════════════════════════════════ -->
+<!--          SPEED STARS SECTION           -->
+<!-- ═══════════════════════════════════════ -->
+
+<div class="container">
+  <div class="game-divider">
+    <span class="game-divider-label">Also Available</span>
+  </div>
+</div>
+
+<div class="game4-header">
+  <img src="https://i.postimg.cc/d0yftdCL/unnamed-(13).webp" alt="Speed Stars" class="header-logo">
+  <div class="badge-yellow">MOD APK • May 2026</div>
+  <h1>Speed Stars<br>MOD APK – Unlocked Full</h1>
+  <p class="tagline">Full Game Unlocked &amp; <strong>Zero Ads</strong> – Free</p>
+  <span class="version-chip">v2.52 • Android 5.0+ • 78 MB</span>
+</div>
+
+<div class="container">
+
+  <!-- SPEED STARS PREVIEW -->
+  <div class="preview-card" style="margin-top:24px;">
+    <div class="slider-wrap">
+      <div class="slider-track" id="sliderTrack4">
+        <div class="slide"><img src="https://i.postimg.cc/kDRQFNqc/unnamed-(14).webp" alt="Speed Stars Screenshot 1" loading="lazy"></div>
+        <div class="slide"><img src="https://i.postimg.cc/CdnGHCSC/unnamed-(15).webp" alt="Speed Stars Screenshot 2" loading="lazy"></div>
+        <div class="slide"><img src="https://i.postimg.cc/m197L48v/unnamed-(16).webp" alt="Speed Stars Screenshot 3" loading="lazy"></div>
+      </div>
+      <button class="slider-btn prev" onclick="moveSlide4(-1)" aria-label="Previous">&#8249;</button>
+      <button class="slider-btn next" onclick="moveSlide4(1)" aria-label="Next">&#8250;</button>
+      <div class="slider-dots" id="dots4">
+        <div class="dot active" onclick="goSlide4(0)"></div>
+        <div class="dot" onclick="goSlide4(1)"></div>
+        <div class="dot" onclick="goSlide4(2)"></div>
+      </div>
+      <div class="live-badge">🆕 UPDATED</div>
+    </div>
+    <div class="preview-info">
+      <p>
+        <strong>Speed Stars</strong> is the ultimate mobile track & field sprinting game.
+        This MOD gives you the <strong>full game unlocked</strong> with no ads — every athlete,
+        every event, and every upgrade available from the start. No paywalls, no interruptions.
+      </p>
+    </div>
+  </div>
+
+  <!-- SPEED STARS INFO TABLE -->
+  <div class="info-table">
+    <div class="info-row">
+      <span class="info-key">📦 Package</span>
+      <span class="info-val">com.noxgames.speedstars</span>
+    </div>
+    <div class="info-row">
+      <span class="info-key">🏃 Category</span>
+      <span class="info-val">Sports / Racing</span>
+    </div>
+    <div class="info-row">
+      <span class="info-key">⚡ Version</span>
+      <span class="info-val">2.52</span>
+    </div>
+    <div class="info-row">
+      <span class="info-key">📁 Size</span>
+      <span class="info-val">78 MB</span>
+    </div>
+    <div class="info-row">
+      <span class="info-key">📅 Updated</span>
+      <span class="info-val">May 17, 2026</span>
+    </div>
+    <div class="info-row">
+      <span class="info-key">🔓 MOD</span>
+      <span class="info-val highlight-yellow">Unlocked Full + No Ads</span>
+    </div>
+    <div class="info-row">
+      <span class="info-key">📱 Requires</span>
+      <span class="info-val">Android 5.0+</span>
+    </div>
+  </div>
+
+  <!-- SPEED STARS STATS -->
+  <div class="stats-row">
+    <div class="stat-box">
+      <span class="stat-num" style="color:var(--yellow-accent);">17,239</span>
+      <span class="stat-label">Downloads</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num" style="color:var(--yellow-accent);">4.8 ⭐</span>
+      <span class="stat-label">User Rating</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num" style="color:var(--yellow-accent);">100%</span>
+      <span class="stat-label">Working</span>
+    </div>
+  </div>
+
+  <!-- SPEED STARS FEATURES -->
+  <div class="features">
+    <div class="section-title">🏃 MOD Features</div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="feature-icon">🔓</span>
+        <div class="feature-text">
+          <strong>Full Game Unlocked</strong>
+          <span>Everything from day one</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🚫</span>
+        <div class="feature-text">
+          <strong>No Ads</strong>
+          <span>Zero interruptions ever</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🏅</span>
+        <div class="feature-text">
+          <strong>All Athletes</strong>
+          <span>Every sprinter available</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🎯</span>
+        <div class="feature-text">
+          <strong>All Events</strong>
+          <span>100m, 200m & more</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🆙</span>
+        <div class="feature-text">
+          <strong>Latest Version</strong>
+          <span>v2.52 – May 2026</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">📱</span>
+        <div class="feature-text">
+          <strong>No Root Needed</strong>
+          <span>Works on any Android</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPEED STARS PROGRESS -->
+  <div class="progress-section">
+    <div class="progress-label">
+      <span>Slots available today</span>
+      <strong style="color:var(--yellow-accent);">89% full</strong>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:89%;background:linear-gradient(90deg,#ca8a04,#eab308);"></div>
+    </div>
+    <div class="progress-note">⚠️ Only <strong style="color:var(--yellow-accent);">138 slots remaining</strong> — download before it's full</div>
+  </div>
+
+  <!-- SPEED STARS CTA -->
+  <div class="cta-section">
+    <div class="cta-wrap-yellow">
+      <div class="cta-label">You are downloading: <strong style="color:var(--yellow-accent);">FREE</strong></div>
+      <div class="cta-game-name">Speed Stars MOD v2.52 – Unlocked Full + No Ads</div>
+      <a href="https://checkmyapp.store/cl/i/4or485" class="download-btn-yellow">
+        <span class="btn-icon">⬇️</span> Download Now – FREE
+      </a>
+      <div class="urgency-text" style="color:var(--yellow-accent);">
+        <span class="urgency-dot" style="background:var(--yellow-accent);"></span>
+        Limited access – working method
+      </div>
+      <div class="security-badges">
+        <span class="sec-badge"><span>🛡️</span> Virus Free</span>
+        <span class="sec-badge"><span>✅</span> Tested &amp; Working</span>
+        <span class="sec-badge"><span>🔒</span> Safe to Install</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPEED STARS REVIEWS -->
+  <div class="trust-section">
+    <div class="section-title">💬 User Reviews</div>
+    <div class="reviews">
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a2">L</div>
+          <div>
+            <div class="reviewer-name">LuisSpeedRun</div>
+            <div class="reviewer-date">5 hours ago</div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+        <div class="review-text">
+          Finally a MOD that actually removes all the ads. <strong>The full unlock is real</strong> — every athlete and event was available immediately after install.
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a1">N</div>
+          <div>
+            <div class="reviewer-name">NaomiRunner</div>
+            <div class="reviewer-date">2 days ago</div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+        <div class="review-text">
+          Speed Stars is already the best athletics game out there. <strong>With no ads it is even better.</strong> Took 2 minutes to set up. Works on my Samsung A55.
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="avatar a3">P</div>
+          <div>
+            <div class="reviewer-name">ProGamer_Phil</div>
+            <div class="reviewer-date">4 days ago</div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+        <div class="review-text">
+          Updated and still working perfectly in May 2026. <strong>100% recommended.</strong> All events unlocked, zero ads. This is the one to use.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPEED STARS SECOND CTA -->
+  <div class="cta-section">
+    <a href="https://checkmyapp.store/cl/i/4or485" class="download-btn-yellow" style="border-radius:14px;">
+      <span class="btn-icon">⬇️</span> Get Speed Stars MOD Free
+    </a>
+    <div class="urgency-text" style="margin-top:10px;color:var(--yellow-accent);">
+      <span class="urgency-dot" style="background:var(--yellow-accent);"></span>
+      Free for a limited time only
+    </div>
+  </div>
+
+</div><!-- /container speed stars -->
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">⚔️🏀🏈 ModGames Store</div>
